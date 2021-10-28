@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/page-flip/dist/js/page-flip.browser.min.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <h1>SHOPPING LIST</h1>
+    <div>
+        <ul class="a">
+        <% for(let i = 0; i < shopping.length; i++) { %>
+            <li><%= shopping[i].shopping.asi %>: <%= shopping[i].shopping.hind %></li>
+
+            <% } %>
+        </ul>
+    </div>
+
+    <form action="/addShopping" method="POST">
+        <input type="text" name="asi" id="" placeholder="Lisa Toode">
+        <input type="text" name="hind" id="" placeholder="Lisa Hind">
+        <button type="submit"> Lisa Toode</button>
+
+    </form>
+</body>
+</html>
